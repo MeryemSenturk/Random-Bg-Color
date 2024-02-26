@@ -40,7 +40,7 @@ newColorInput.addEventListener("input", () => {
 document.querySelector("#copy").addEventListener("click", () => {
 let colorCode = newColorInput.value;
 navigator.clipboard
-  .writeText("colorCode")
+  .writeText(colorCode)
   .then(() => alert(`Renk ${colorCode} kopyalandı.`));
 })
 
